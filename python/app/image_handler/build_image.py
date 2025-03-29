@@ -5,4 +5,4 @@ def build_image():
     tag = input ('Enter the image tag:')
     full_name = name + ':' + tag
     print (f"Building image: {full_name}")
-    subprocess.run([f"docker build -t {name} ."], shell=True)
+    subprocess.run([f"docker build -t {full_name} ."], shell=True)
